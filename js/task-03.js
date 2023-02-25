@@ -12,3 +12,16 @@ const images = [
     alt: 'Group of Horses Running',
   },
 ];
+const listGalleryEl = document.querySelector('ul');
+
+const makeListEl = images.map((element) => {
+  const imageEl = document.createElement('img');
+  imageEl.setAttribute('url', element.url);
+  imageEl.setAttribute('alt', element.alt);
+  const listItemEl = document.createElement('li');
+  listItemEl.appendChild(imageEl);
+  listGalleryEl.appendChild(listItemEl);
+
+})
+
+console.log(listGalleryEl);
