@@ -11,7 +11,6 @@ function getRandomHexColor() {
 btnCreate.addEventListener('click', () =>{
   const collection = [];
   let amount = formInputEl.value;
-  console.log(amount);
 for (let i=0; i < amount; i+=1 ) {
   let boxSize = i*10 + 30;
   const elemBox = document.createElement("div");
