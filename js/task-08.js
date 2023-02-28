@@ -10,7 +10,7 @@ const {
   } = event.currentTarget;
 
 
-if (formInputEmailEl.value === '' && formInputPasswordlEl.value === ''){
+if (formInputEmailEl.value === '' || formInputPasswordlEl.value === ''){
    return alert ('Всі поля повинні бути заповнені');
 }
 console.log(`email: ${email.value}, Password: ${password.value}`);

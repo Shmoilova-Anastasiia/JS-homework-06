@@ -11,10 +11,11 @@ const ingredients = [
 
 const listIngridEl = document.querySelector('ul');
 
-const makeListEl = ingredients.map( (element, i) =>{
+const makeListEl = ingredients.map( (element) =>{
   const listEl = document.createElement('li');
   listEl.textContent = element;
   listEl.classList.add('item');
-  listIngridEl.append(listEl);
-
+  return listEl
+  
 });
+listIngridEl.append(...makeListEl);
